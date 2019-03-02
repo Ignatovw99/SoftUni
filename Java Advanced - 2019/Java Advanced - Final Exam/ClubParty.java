@@ -28,11 +28,6 @@ public class ClubParty {
             ArrayList<Integer> peopleInHall = entryHall.getValue();
             if (isHallFree(peopleInHall, peopleInReservation, capacity)) {
                 entryHall.getValue().add(peopleInReservation); // add certain reservation
-                //int currentPeopleInHall = entryHall.getValue().stream().reduce(0, (f, s) -> f + s);
-                //if (currentPeopleInHall > capacity) {
-                    //printHall(entryHall);
-                    //halls.remove(entryHall.getKey());
-                //}
                 break;
             } else {
                 printHall(entryHall);
