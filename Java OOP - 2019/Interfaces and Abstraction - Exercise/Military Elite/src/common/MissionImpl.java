@@ -1,0 +1,25 @@
+package common;
+
+import enumerations.State;
+import interfaces.Mission;
+
+public class MissionImpl implements Mission {
+    private String codeName;
+    private State state;
+
+    public MissionImpl(String codeName, State state) {
+        this.codeName = codeName;
+        this.state = state;
+    }
+
+    public void completeMission() {
+        this.state = State.Finished;
+    } //TODO
+
+    @Override
+    public String toString() {
+        return String.format("Code Name: %s State: %s",
+                this.codeName,
+                this.state.toString());
+    }
+}
