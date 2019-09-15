@@ -1,0 +1,318 @@
+[
+  {
+    "id": 29,
+    "name": "Louann Holzworth",
+    "birthDate": "1960-09-30T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 28,
+    "name": "Donnetta Soliz",
+    "birthDate": "1963-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 17,
+    "name": "Rema Revelle",
+    "birthDate": "1970-04-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 16,
+    "name": "Carri Knapik",
+    "birthDate": "1972-02-01T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 27,
+    "name": "Garret Capron",
+    "birthDate": "1975-06-30T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 8,
+    "name": "Teddy Hobby",
+    "birthDate": "1975-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 10,
+    "name": "Audrea Cardinal",
+    "birthDate": "1976-09-30T11:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      {
+        "discount": 0.4,
+        "car": {
+          "make": "Nissan",
+          "model": "Versa",
+          "travelledDistance": 9.223775807E9
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Francis Mckim",
+    "birthDate": "1977-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.0,
+        "car": {
+          "make": "Chevy",
+          "model": "Caprice",
+          "travelledDistance": 9.223372034775808E15
+        }
+      },
+      {
+        "discount": 0.4,
+        "car": {
+          "make": "Mercedes",
+          "model": "W212",
+          "travelledDistance": 927.0
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Brett Brickley",
+    "birthDate": "1980-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.05,
+        "car": {
+          "make": "Nissan",
+          "model": "GT-R",
+          "travelledDistance": 2.147483647E9
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Kristian Engberg",
+    "birthDate": "1981-10-02T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 26,
+    "name": "Hipolito Lamoreaux",
+    "birthDate": "1982-07-31T11:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.15,
+        "car": {
+          "make": "Skoda",
+          "model": "Citigo",
+          "travelledDistance": 214747.0
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Zada Attwood",
+    "birthDate": "1982-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 25,
+    "name": "Sylvie Mcelravy",
+    "birthDate": "1983-09-30T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 7,
+    "name": "Rico Peer",
+    "birthDate": "1984-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 5,
+    "name": "Hai Everton",
+    "birthDate": "1985-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 6,
+    "name": "Lino Subia",
+    "birthDate": "1985-12-20T11:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      {
+        "discount": 0.05,
+        "car": {
+          "make": "Nissan",
+          "model": "GT-R",
+          "travelledDistance": 9.6854775807E10
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Jimmy Grossi",
+    "birthDate": "1986-06-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.1,
+        "car": {
+          "make": "Great Wall",
+          "model": "Steed 3",
+          "travelledDistance": 9.22336854775807E14
+        }
+      },
+      {
+        "discount": 0.2,
+        "car": {
+          "make": "Opel",
+          "model": "Omega",
+          "travelledDistance": 2.147483647E9
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Carole Witman",
+    "birthDate": "1987-09-30T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 13,
+    "name": "Oren Perlman",
+    "birthDate": "1988-09-30T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 2,
+    "name": "Natalie Poli",
+    "birthDate": "1990-10-03T11:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 3,
+    "name": "Marcelle Griego",
+    "birthDate": "1990-10-03T11:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 19,
+    "name": "Yvonne Mccalla",
+    "birthDate": "1992-03-02T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.2,
+        "car": {
+          "make": "Citroen",
+          "model": "Berlingo",
+          "travelledDistance": 9.22354775807E11
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ann Mcenaney",
+    "birthDate": "1992-03-02T12:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 21,
+    "name": "Cinthia Lasala",
+    "birthDate": "1992-11-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.2,
+        "car": {
+          "make": "Seat",
+          "model": "Ibiza",
+          "travelledDistance": 2.1474847E7
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Emmitt Benally",
+    "birthDate": "1993-11-20T12:00:00",
+    "isYoungDriver": true,
+    "sales": []
+  },
+  {
+    "id": 20,
+    "name": "Nisha Markwell",
+    "birthDate": "1994-04-04T12:00:00",
+    "isYoungDriver": false,
+    "sales": [
+      {
+        "discount": 0.4,
+        "car": {
+          "make": "Nissan",
+          "model": "GT-R",
+          "travelledDistance": 23647.0
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Faustina Burgher",
+    "birthDate": "1994-06-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 18,
+    "name": "Taina Achenbach",
+    "birthDate": "1994-10-01T12:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  },
+  {
+    "id": 9,
+    "name": "Johnette Derryberry",
+    "birthDate": "1995-10-01T12:00:00",
+    "isYoungDriver": true,
+    "sales": [
+      {
+        "discount": 0.2,
+        "car": {
+          "make": "Peugeot",
+          "model": "306",
+          "travelledDistance": 2.147483647E9
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Daniele Zarate",
+    "birthDate": "1995-10-05T12:00:00",
+    "isYoungDriver": false,
+    "sales": []
+  }
+]

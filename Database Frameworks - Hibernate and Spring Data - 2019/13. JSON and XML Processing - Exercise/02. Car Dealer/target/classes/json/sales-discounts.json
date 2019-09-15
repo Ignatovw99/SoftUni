@@ -1,0 +1,134 @@
+[
+  {
+    "car": {
+      "make": "Seat",
+      "model": "Ibiza",
+      "travelledDistance": 21474847
+    },
+    "customerName": "Cinthia Lasala",
+    "discount": 0.2,
+    "price": 4306.66,
+    "priceWithDiscount": 4298.046
+  },
+  {
+    "car": {
+      "make": "Mercedes",
+      "model": "W212",
+      "travelledDistance": 927
+    },
+    "customerName": "Francis Mckim",
+    "discount": 0.4,
+    "price": 5941.47,
+    "priceWithDiscount": 5917.704
+  },
+  {
+    "car": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "travelledDistance": 23647
+    },
+    "customerName": "Nisha Markwell",
+    "discount": 0.4,
+    "price": 5404.76,
+    "priceWithDiscount": 5383.140
+  },
+  {
+    "car": {
+      "make": "Chevy",
+      "model": "Caprice",
+      "travelledDistance": 9223372034775807
+    },
+    "customerName": "Francis Mckim",
+    "discount": 0.0,
+    "price": 2948.27,
+    "priceWithDiscount": 2948.270
+  },
+  {
+    "car": {
+      "make": "Citroen",
+      "model": "Berlingo",
+      "travelledDistance": 922354775807
+    },
+    "customerName": "Yvonne Mccalla",
+    "discount": 0.2,
+    "price": 8151.56,
+    "priceWithDiscount": 8135.256
+  },
+  {
+    "car": {
+      "make": "Skoda",
+      "model": "Citigo",
+      "travelledDistance": 214747
+    },
+    "customerName": "Hipolito Lamoreaux",
+    "discount": 0.15,
+    "price": 6662.42,
+    "priceWithDiscount": 6652.4263
+  },
+  {
+    "car": {
+      "make": "Great Wall",
+      "model": "Steed 3",
+      "travelledDistance": 922336854775807
+    },
+    "customerName": "Jimmy Grossi",
+    "discount": 0.1,
+    "price": 6374.95,
+    "priceWithDiscount": 6368.575
+  },
+  {
+    "car": {
+      "make": "Peugeot",
+      "model": "306",
+      "travelledDistance": 2147483647
+    },
+    "customerName": "Johnette Derryberry",
+    "discount": 0.2,
+    "price": 4045.86,
+    "priceWithDiscount": 4037.768
+  },
+  {
+    "car": {
+      "make": "Nissan",
+      "model": "Versa",
+      "travelledDistance": 9223775807
+    },
+    "customerName": "Audrea Cardinal",
+    "discount": 0.4,
+    "price": 5121.52,
+    "priceWithDiscount": 5101.033
+  },
+  {
+    "car": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "travelledDistance": 96854775807
+    },
+    "customerName": "Lino Subia",
+    "discount": 0.05,
+    "price": 7983.01,
+    "priceWithDiscount": 7979.0184
+  },
+  {
+    "car": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "travelledDistance": 2147483647
+    },
+    "customerName": "Brett Brickley",
+    "discount": 0.05,
+    "price": 8976.33,
+    "priceWithDiscount": 8971.8418
+  },
+  {
+    "car": {
+      "make": "Opel",
+      "model": "Omega",
+      "travelledDistance": 2147483647
+    },
+    "customerName": "Jimmy Grossi",
+    "discount": 0.2,
+    "price": 7701.78,
+    "priceWithDiscount": 7686.376
+  }
+]

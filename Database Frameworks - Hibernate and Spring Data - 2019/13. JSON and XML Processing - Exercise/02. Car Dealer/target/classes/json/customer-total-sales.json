@@ -1,0 +1,52 @@
+[
+  {
+    "fullName": "Lino Subia",
+    "boughtCars": 1,
+    "spentMoney": 7983.01
+  },
+  {
+    "fullName": "Johnette Derryberry",
+    "boughtCars": 1,
+    "spentMoney": 4045.86
+  },
+  {
+    "fullName": "Audrea Cardinal",
+    "boughtCars": 1,
+    "spentMoney": 5121.52
+  },
+  {
+    "fullName": "Francis Mckim",
+    "boughtCars": 2,
+    "spentMoney": 8889.74
+  },
+  {
+    "fullName": "Brett Brickley",
+    "boughtCars": 1,
+    "spentMoney": 8976.33
+  },
+  {
+    "fullName": "Yvonne Mccalla",
+    "boughtCars": 1,
+    "spentMoney": 8151.56
+  },
+  {
+    "fullName": "Nisha Markwell",
+    "boughtCars": 1,
+    "spentMoney": 5404.76
+  },
+  {
+    "fullName": "Cinthia Lasala",
+    "boughtCars": 1,
+    "spentMoney": 4306.66
+  },
+  {
+    "fullName": "Jimmy Grossi",
+    "boughtCars": 2,
+    "spentMoney": 14076.73
+  },
+  {
+    "fullName": "Hipolito Lamoreaux",
+    "boughtCars": 1,
+    "spentMoney": 6662.42
+  }
+]
