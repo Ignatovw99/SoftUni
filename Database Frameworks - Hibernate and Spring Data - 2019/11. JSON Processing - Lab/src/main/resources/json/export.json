@@ -1,0 +1,13 @@
+{
+  "firstName": "Dwayne",
+  "lastName": "Johnson",
+  "phoneNumbers": [
+    "065321",
+    "043126",
+    "054131"
+  ],
+  "address": {
+    "city": "Manchester",
+    "country": "England"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Dwayne",
+    "lastName": "Johnson",
+    "phoneNumbers": [
+      "043126",
+      "054131",
+      "065321"
+    ],
+    "address": {
+      "city": "Manchester",
+      "country": "England",
+      "street": "Beer Lane"
+    }
+  },
+  {
+    "firstName": "Frank",
+    "lastName": "Lampard",
+    "phoneNumbers": [
+      "412341",
+      "532131",
+      "512356"
+    ],
+    "address": {
+      "city": "London",
+      "country": "England",
+      "street": "Bread Street"
+    }
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Ferguson",
+    "phoneNumbers": [
+      "412412",
+      "089231",
+      "081232"
+    ],
+    "address": {
+      "city": "Leeds",
+      "country": "England",
+      "street": "King Street"
+    }
+  }
+]
