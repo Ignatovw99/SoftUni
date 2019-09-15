@@ -39,6 +39,7 @@
 <tr>
 <td width="50%">
 <p><a title="Java Advanced Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Java%20Advanced%20-%202019" target="_blank">Java Advanced Course Overview</a></p>
+</details>
  <hr />
 <!-- Java Advanced End -->
 <!-- Java OOP Start -->
@@ -60,6 +61,7 @@
 <tr>
 <td width="50%">
 <p><a title="Java OOP Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Java%20OOP%20-%202019" target="_blank">Java OOP Course Overview</a></p>
+</details>
  <hr />
 <!-- Java OOP End -->
 <!-- MySQL Start -->
