@@ -18,6 +18,7 @@
 <tr>
 <td width="50%">
 <p><a title="Technology Fundamentals Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Technology%20Fundamentals%20-%202018" target="_blank">Technology Fundamentals Course Overview</a></p>
+ <hr />
 <!-- Technology Fundamentals End -->
  <!-- Java Advanced Start -->
 <hr />
@@ -38,6 +39,7 @@
 <tr>
 <td width="50%">
 <p><a title="Java Advanced Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Java%20Advanced%20-%202019" target="_blank">Java Advanced Course Overview</a></p>
+ <hr />
 <!-- Java Advanced End -->
 <!-- Java OOP Start -->
 <hr />
@@ -58,6 +60,7 @@
 <tr>
 <td width="50%">
 <p><a title="Java OOP Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Java%20OOP%20-%202019" target="_blank">Java OOP Course Overview</a></p>
+ <hr />
 <!-- Java OOP End -->
 <!-- MySQL Start -->
 <hr />
@@ -78,6 +81,7 @@
 <tr>
 <td width="50%">
 <p><a title="MySQL Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Database%20Basics%20-%20MySQL%20-%202019" target="_blank">MySQL Course Overview</a></p>
+ <hr />
 <!-- MySQL End -->
 <!-- Hibernate Start -->
 <hr />
@@ -98,4 +102,5 @@
 <tr>
 <td width="50%">
 <p><a title="Hibernate Course Overview" href="https://github.com/Ignatovw99/SoftUni/tree/master/Database%20Frameworks%20-%20Hibernate%20and%20Spring%20Data%20-%202019" target="_blank">Hibernate Course Overview</a></p>
+ <hr />
 <!-- Hibernate End -->
