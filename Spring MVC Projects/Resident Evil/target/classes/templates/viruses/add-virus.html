@@ -1,0 +1,13 @@
+<div class="container-fluid w-75">
+    <h1 class="my-4">Spread a new Virus!</h1>
+    <th:block th:include="~{fragments/virus-form}"></th:block>
+    <div class="button-holder m-3 d-flex justify-content-end">
+        <button type="submit" form="virus-form" class="btn btn-dark">Spread</button>
+    </div>
+    <script type="application/javascript">
+        function loadAddVirusForm() {
+            document.getElementById('virus-form').setAttribute('action', '/viruses/add');
+        }
+        window.onload = loadAddVirusForm;
+    </script>
+</div>

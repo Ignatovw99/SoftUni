@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Resident Evil:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Resident Evil</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="resident-evil-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Resident Evil:war exploded" />
+    </root>
+  </artifact>
+</component>

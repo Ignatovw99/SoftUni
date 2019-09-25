@@ -1,0 +1,12 @@
+<div class="jumbotron col-11 m-auto" th:object="${virusToDelete}">
+    <h2 class="d-flex justify-content-center" th:text="|Are you sure you want to delete the virus with name *{name}?|"></h2>
+    <div class="virus-holder d-flex justify-content-center">
+        <form class="form form-inline m-3" th:method="POST" th:action="@{/viruses/delete}">
+            <input class="hidden-input-field" type="text" th:name="id" th:value="*{id}">
+            <button class="btn  btn-danger" type="submit">Yes</button>
+        </form>
+        <form class="form form-inline m-3" th:method="GET" th:action="@{/viruses}">
+            <button class="btn btn-info" type="submit">No</button>
+        </form>
+    </div>
+</div>

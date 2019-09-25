@@ -1,0 +1,28 @@
+<th:block xmlns:th="http://www.thymeleaf.org"
+          xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+    <div class="jumbotron col-11 m-auto">
+        <h1>All Viruses</h1>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Magnitude</th>
+                <th scope="col">Released On</th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="virus : ${viruses}">
+                <tr>
+                    <td scope="col" th:text="${virusStat.index + 1}"></td>
+                    <td scope="col" th:text="${virus.name}"></td>
+                    <td scope="col" th:text="${virus.magnitude}"></td>
+                    <td scope="col" th:text="${#temporals.format(virus.releaseOn, 'dd-MMM-yyyy')}"></td>
+                    <td sec:authorize="hasAuthority('MODERATOR')" scope="col"><a class="btn btn-info" th:href="@{/viruses/edit/{id}(id=${virus.id})}" th:text="Edit"></a></td>
+                    <td sec:authorize="hasAuthority('MODERATOR')" scope="col"><a class="btn btn-danger" th:href="@{/viruses/delete/{id}(id=${virus.id})}" th:text="Delete"></a></td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+</th:block>

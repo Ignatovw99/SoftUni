@@ -1,0 +1,6 @@
+<main class="main-content">
+    <h1 class="text-center" th:text="|Welcome, Administrator ${username}|"></h1>
+    <hr class="hr-2 bg-resident-evil" />
+    <h2>Authorities</h2>
+    <p class="text-center w-75" th:text="${#strings.listJoin(authorities, ', ')}"></p>
+</main>

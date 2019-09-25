@@ -1,0 +1,31 @@
+<div class="jumbotron col-sm-11 m-auto">
+    <h1>All Users!</h1>
+    <hr />
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Roles</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="user,iter : ${users}">
+            <tr>
+                <td scope="col" th:text="${iter.index + 1}"></td>
+                <td scope="col" th:text="${user.username}"></td>
+                <td scope="col" th:text="${user.email}"></td>
+                <td scope="col" th:text="${#strings.setJoin(user.authorities, ', ')}"></td>
+                <td scope="col">
+                    <th:block th:unless="${#strings.contains(user.authorities, 'ROOT')}">
+                        <th:block th:unless="${#authentication.principal.username == user.username}">
+                            <a class="btn btn-info" th:href="@{/users/edit/{id}(id=${user.id})}">Edit</a>
+                        </th:block>
+                    </th:block>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

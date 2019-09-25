@@ -1,0 +1,16 @@
+<div class="container-fluid w-75">
+    <h1 class="my-4">Edit the Virus</h1>
+    <th:block th:include="~{fragments/virus-form}"></th:block>
+    <div class="button-holder m-3 d-flex justify-content-end">
+        <button type="submit" form="virus-form" class="btn btn-dark">Edit</button>
+    </div>
+    <script type="application/javascript">
+        function loadEditVirusPage() {
+            document.getElementById('release-date').readOnly = true;
+            var virusId = '[[${virusId}]]';
+            document.getElementById('virus-form').setAttribute('action', '/viruses/edit/' + virusId);
+        }
+
+        window.onload = loadEditVirusPage;
+    </script>
+</div>
