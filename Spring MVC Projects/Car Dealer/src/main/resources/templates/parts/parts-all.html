@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5">All Available Parts</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Part Name</th>
+        <th scope="col">Part Price</th>
+        <th scope="col">Edit Action</th>
+        <th scope="col">Delete Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="part : ${parts}">
+        <th scope="row"><span th:text="${part.id}"></span></th>
+        <th scope="row"><span th:text="${part.name}"></span></th>
+        <td scope="row"><span th:text="${part.price}"></span></td>
+        <td scope="row">
+            <a class="text-dark" th:href="@{/parts/edit/{id}(id=${part.id})}">Edit</a>
+        </td>
+        <td scope="row">
+            <a class="text-dark" th:href="@{/parts/delete/{id}(id=${part.id})}">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

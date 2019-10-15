@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5">Importer Suppliers</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col"># Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Offered Parts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="supplier : ${importerSuppliers}" th:object="${supplier}">
+        <th scope="row"><span th:text="*{id}"></span></th>
+        <td scope="row"><span th:text="*{name}"></span></td>
+        <td scope="row"><span th:text="*{numberOfOfferedParts}"></span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

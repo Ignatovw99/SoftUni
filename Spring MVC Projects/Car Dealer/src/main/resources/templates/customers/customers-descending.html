@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5">Customers Ordered Descending</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Birth Date</th>
+        <th scope="col">Is Young Driver</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="customer : ${customers}">
+        <th scope="row"><span th:text="${customerStat.index + 1}"></span></th>
+        <td scope="row"><span th:text="${customer.name}"></span></td>
+        <td scope="row"><span th:text="${#temporals.format(customer.birthDate, 'dd-MM-yyyy')}"></span></td>
+        <td scope="row"><span th:text="${customer.isYoungDriver}"></span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

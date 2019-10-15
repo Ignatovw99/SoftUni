@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5">Sales With Discount</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Car Make</th>
+        <th scope="col">Car Model</th>
+        <th scope="col">Customer Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="sale : ${discountedSales}">
+        <th scope="row"><span th:text="${saleStat.index + 1}"></span></th>
+        <th scope="row"><span th:text="${sale.car.make}"></span></th>
+        <td scope="row"><span th:text="${sale.car.model}"></span></td>
+        <td scope="row"><span th:text="${sale.customer.name}"></span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

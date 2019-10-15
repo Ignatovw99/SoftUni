@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5" th:text="|Sale With Id ${saleId}|"></h1>
+</div>
+<hr style="height: 2px;" class="bg-danger w-50">
+<div class="jumbotron text-dark mt-1" th:object="${sale}">
+    <h1 class="d-flex justify-content-center" th:text="|Car Make: *{car.make}|"></h1>
+    <h1 class="d-flex justify-content-center" th:text="|Car Model: *{car.model}|"></h1>
+    <h1 class="d-flex justify-content-center" th:text="|Car Travelled Distance: *{car.travelledDistance}|"></h1>
+    <h1 class="d-flex justify-content-center" th:text="|Customer Name: *{customer.name}|"></h1>
+    <h1 class="d-flex justify-content-center" th:text="|Price Without Discount: *{priceWithoutDiscount}|"></h1>
+    <h1 class="d-flex justify-content-center" th:text="|Price With Discount: *{priceWithDiscount}|"></h1>
+</div>
+</body>
+</html>

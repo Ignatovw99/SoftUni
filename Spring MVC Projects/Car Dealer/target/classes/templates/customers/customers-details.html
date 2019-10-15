@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5" th:text="|Customer With Id ${customerId}|"></h1>
+</div>
+<hr style="height: 2px;" class="bg-danger w-50">
+<th:block th:if="${customer == null}">
+    <h1 th:text="|A customer with id ${customerId}| does not exist.|"></h1>
+</th:block>
+<th:block th:unless="${customer == null}">
+    <div class="jumbotron text-dark mt-1" th:object="${customer}">
+        <h1 class="d-flex justify-content-center" th:text="|Name: *{name}|"></h1>
+        <h1 class="d-flex justify-content-center" th:text="|Bought Cars: *{boughtCars}|"></h1>
+        <h1 class="d-flex justify-content-center" th:text="|Total Spent Money: *{totalSpentMoney}|"></h1>
+    </div>
+    <h1 class="d-flex justify-content-center mt-3">
+        <a class="text-danger" th:href="@{/customers/edit/{id}(id=${customerId})}">Edit</a>
+    </h1>
+</th:block>
+</body>
+</html>

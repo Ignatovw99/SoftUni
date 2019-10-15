@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+<form class="jumbotron" th:action="@{/customers/add}" th:method="POST" th:object="${customerAddEditBindingModel}">
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name..." name="name" th:field="*{name}" th:value="*{name}">
+        <div th:if="${#fields.hasErrors('name')}">
+            <span th:each="err : ${#fields.errors('name')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="birthDate">Birth Date</label>
+        <input type="datetime-local" id="birthDate" name="birthDate" th:field="*{birthDate}" th:value="*{birthDate}">
+        <div th:if="${#fields.hasErrors('birthDate')}">
+            <span th:each="err : ${#fields.errors('birthDate')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary d-flex justify-content-center">Add</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+<form class="jumbotron" th:action="@{/parts/add}" th:method="POST" th:object="${partAddEditBindingModel}">
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name..." name="name" th:field="*{name}" th:value="*{name}">
+        <div th:if="${#fields.hasErrors('name')}">
+            <span th:each="err : ${#fields.errors('name')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="price">Price</label>
+        <input type="number" step="0.1" id="price" name="price" th:field="*{price}" th:value="*{price}">
+        <div th:if="${#fields.hasErrors('price')}">
+            <span th:each="err : ${#fields.errors('price')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" th:field="*{quantity}" th:value="*{quantity}">
+        <div th:if="${#fields.hasErrors('quantity')}">
+            <span th:each="err : ${#fields.errors('quantity')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <label class="mr-2" for="supplierName">Supplier Name</label>
+        <input type="text" id="supplierName" name="supplierName" th:field="*{supplierName}" th:value="*{supplierName}">
+        <div th:if="${#fields.hasErrors('supplierName')}">
+            <span th:each="err : ${#fields.errors('supplierName')}" th:text="${err}"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary d-flex justify-content-center">Add</button>
+</form>
+</body>
+</html>

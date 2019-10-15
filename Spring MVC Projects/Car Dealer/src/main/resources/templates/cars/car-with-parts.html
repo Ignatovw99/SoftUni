@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5" th:text="|Car With Id ${id}|"></h1>
+</div>
+<hr style="height: 2px;" class="bg-danger w-50">
+<th:block th:if="${car == null}">
+    <h1 class="container-fluid d-flex justify-content-center text-dark mt-5" th:text="|A car with id ${id} was not found|"></h1>
+</th:block>
+<th:block th:unless="${car == null}">
+    <div class="jumbotron text-dark mt-1" th:object="${car}">
+        <h1 class="d-flex justify-content-center" th:text="|Make: *{make}|"></h1>
+        <h1 class="d-flex justify-content-center" th:text="|Model: *{model}|"></h1>
+        <h1 class="d-flex justify-content-center" th:text="|Travelled Distance: *{travelledDistance}|"></h1>
+        <h1 class="d-flex justify-content-center" th:text="|Total price: *{price}|"></h1>
+    </div>
+    <h1 class="d-flex justify-content-center">Car's Parts</h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:if="${#lists.isEmpty(car.parts)}">
+            <h1 class="jumbotron-fluid mt-3">There are no parts for this car.</h1>
+        </th:block>
+        <tr th:each="part : ${car.parts}">
+            <th scope="row"><span th:text="${partStat.index + 1}"></span></th>
+            <td scope="row"><span th:text="${part.name}"></span></td>
+            <td scope="row"><span th:text="${part.price}"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</th:block>
+</body>
+</html>

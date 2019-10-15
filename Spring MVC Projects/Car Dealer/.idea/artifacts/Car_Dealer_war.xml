@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Car Dealer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Car Dealer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="car-dealer-spring-exercise-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Car Dealer:war exploded" />
+    </root>
+  </artifact>
+</component>

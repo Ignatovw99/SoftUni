@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<th:block th:replace="fragments/navbar"></th:block>
+
+<div class="jumbotron text-danger mt-2">
+    <h1 class="text-center mt-5" th:text="|Cars With Make ${#strings.toUpperCase(make)}|"></h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Make</th>
+        <th scope="col">Model</th>
+        <th scope="col">Travelled Distance</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <th scope="row"><span th:text="${carStat.index + 1}"></span></th>
+        <td scope="row"><span th:text="${car.make}"></span></td>
+        <td scope="row"><span th:text="${car.model}"></span></td>
+        <td scope="row"><span th:text="${car.travelledDistance}"></span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
