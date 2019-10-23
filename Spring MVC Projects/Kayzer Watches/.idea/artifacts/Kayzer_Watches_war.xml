@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Kayzer Watches:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Kayzer Watches</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="keyzer-watches-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Kayzer Watches:war exploded" />
+    </root>
+  </artifact>
+</component>
